@@ -1,0 +1,6 @@
+Folder client and backend were the sample codes for the frontend application and backend application
+step-1 use the folder terraform-CN and create the custom network and RDS and jumphost
+step-2 use public ip of jumphost and connect to jenkins 
+step-3 ssh into jumphost and copy the jenkins password
+step-4 install plugins and pipeline stage view 
+step-5 run a pipeline to create cluster using eks-terraform folder   ---use pipeline script from SCM since we have jenkinsfile in the folder
