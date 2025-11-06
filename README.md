@@ -1,4 +1,4 @@
-**full end-to-end **DevOps automation pipeline** **integrating Terraform**, **Jenkins**, **ECR**, Kubernetes, and ** ArgoCD**
+**Full end-to-end **DevOps automation pipeline** **Integrating Terraform**, **Jenkins**, **ECR**, Kubernetes, and ** ArgoCD**
 
 
 **Project Summary** — End-to-End DevOps Automation using Terraform, Jenkins, ECR, Kubernetes, and ArgoCD
