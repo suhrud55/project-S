@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: 539247488278.dkr.ecr.ap-south-1.amazonaws.com/backend:7
+        image: 539247488278.dkr.ecr.ap-south-1.amazonaws.com/backend:8
         ports:
         - containerPort: 5000            # Backend app listening port
         env:
