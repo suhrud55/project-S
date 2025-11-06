@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
       - name: backend
-        image: :5
+        image: your-backend-image:5      # Replace with your actual image
         ports:
-        - containerPort: 80
+        - containerPort: 5000            # Backend app listening port
         env:
         - name: DB_HOST
           valueFrom:
@@ -30,6 +30,11 @@ spec:
             secretKeyRef:
               name: db-secret
               key: db_username
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: db-secret
+              key: db_password
         - name: DB_PORT
           valueFrom:
             configMapKeyRef:
@@ -40,10 +45,5 @@ spec:
             configMapKeyRef:
               name: db-config
               key: DB_NAME
-        - name: DB_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: db-secret
-              key: db_password
         - name: PORT
-          value: "3306"  # Adjust if necessary
+          value: "5000"                     # Must match containerPort
