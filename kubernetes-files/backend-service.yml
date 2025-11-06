@@ -3,12 +3,9 @@ kind: Service
 metadata:
   name: backend
 spec:
-  ports:
-  - port: 80
-    targetPort: 80
-    protocol: TCP
-      #nodePort: 31005  # Optional: Specify a #nodePort if you want a fixed port
   selector:
-    app: backend  # Ensure this matches the labels in the Deployment
-  type: LoadBalancer
-
+    app: backend
+  ports:
+    - port: 80
+      targetPort: 5000
+  type: ClusterIP   # Default
