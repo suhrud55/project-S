@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: your-frontend-image:3   # Replace with your actual image
+        image: :4
         ports:
         - containerPort: 80
         env:
